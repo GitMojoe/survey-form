@@ -5,54 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="title">Freecode Camp Survey forms</h1>
-    <p id="description">Thank you for your time to help us improve our page</p>
-    <form action="" id="survey-form">
+    <h1 id="title">Germeg Inc. Survey forms</h1>
+        <p id="description"><em>Thank you for your time to help us improve our page</em> </p>
         
+        <div id="survey-border">
+
+        <form action="" id="survey-form">
+
         <div>
-            <label for="name" id="name-label"> UserName:</label> <input type="text" id="name" placeholder="eg.ama,kofi..."> <br><br>
+            <label for="name" id="name-label">Name</label> <br>
+            <input type="text" id="name" placeholder="eg.ama,kofi..." required> <br><br>
         </div>
        
         <div>
-        <label for="email" id="email-label">Email:</label> <input type="email" id="email" placeholder="eg. someone@gmail.com"> <br><br>
+        <label for="email" id="email-label">Email</label> <br>
+        <input type="email" id="email" placeholder="eg. someone@gmail.com" required> <br><br>
 
        </div>
      
         <div>
-        <label for="number" id="number-label">Age:</label> <input type="number" id="number" min="10" max="200" placeholder="15, 56, 28"> <br>
+        <label for="number" id="number-label">Age (optional)</label> <br>
+         <input type="number" id="number" min="10" max="200" placeholder="Age" required> <br><br>
 
        </div>
        
-       <div>
+       <div> How did you hear about us?<br>
         <select  id="dropdown">
-            <option value="junior-high">Lorem</option>
-            <option value="senior-high">Lorem, ipsum.</option>
-            <option value="undergraduate">Lorem, ipsum dolor.</option>
+            <option value="social-media">Social Media</option>
+            <option value="radionTV">Radio / TV</option>
+            <option value="a-friend">A friend</option>
+            <option value="old-customer">Old customber</option>
         </select> 
-       </div>
+       </div><br>
        
-       <div>
-        <input type="radio" name="attribute" value="yes">Lorem ipsum
-        <input type="radio" name="attribute" value="no">Lorem, ipsum dolor
-        <input type="radio" name="attribute" value="maybe">Lorem ipsum dolor sit
-       </div>
+       <div> Would you recommend our services to a friend? <br>
+        <input type="radio" name="attribute" value="yes">Yes <br>
+        <input type="radio" name="attribute" value="no">No <br>
+        <input type="radio" name="attribute" value="maybe">maybe<br>
+       </div><br>
 
-       <div>
-        <input type="checkbox" value="Lorem">Lorem
-        <input type="checkbox" value="ipsum">ipsum
-        <input type="checkbox" value="dolor">dolor
-       </div>
+       <span>What would like to see improved? (check all that apply) </span><br>
+       <span><div><input type="checkbox" value="printing">Printing</span>
+       <span> <input type="checkbox" value="boutique">Boutique</span>
+       <span><input type="checkbox" value="photography">Phography</span> 
+        <span><input type="checkbox" value="sounds">Sounds </span>
+        <span><input type="checkbox" value="real-estate">Real estate <br>
+        </span>
+    </div><br>
 
-       <div>
-                <textarea name="extra-comment" cols="30" rows="10" placeholder="your comments goes here"></textarea>
-Lorem ipsum dolor sit amet
+       <div> Any comments or suggestion? <br> <br>
+                <textarea name="extra-comment" cols="60" rows="10" placeholder="Enter you comment here"></textarea><br>
        </div>
 
        <input type="submit" id="submit">
 
     </form>
-</body>
+</div>
 
+</body>
 </html>
